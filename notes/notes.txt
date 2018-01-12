@@ -1,0 +1,2 @@
+left off working on front end of weather app, noticed i need to fix the red color of the text/ then launch site
+also need to push to github. the study and work on another tutorial they are fun the reading ones. 
