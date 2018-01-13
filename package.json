@@ -2,6 +2,42 @@
   "name": "weather_app",
   "version": "1.0.0",
   "description": "Simple weather app",
+  "engines": {
+    "node":"*"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ralph Williams",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.10",
+    "request": "^2.83.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darknite23/weather_app.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}
+
+/*
+before changes(engines is new)
+  {
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Simple weather app",
+  "engines": {
+    "node":"*"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,3 +52,4 @@
     "request": "^2.83.0"
   }
 }
+*/

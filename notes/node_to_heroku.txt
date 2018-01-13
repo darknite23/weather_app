@@ -1,0 +1,63 @@
+DEPLOYING YOUR APP 
+need a heroku account
+need node js duh
+need a git account. 
+log into heroku from command line
+    /*
+            ➜  weather_app heroku login
+        Enter your Heroku credentials:
+        Email: rwilliams.b3@gmail.com
+        Password: ********
+        Logged in as rwilliams.b3@gmail.com 
+    */
+2.Check to make sure you have the required apps installed in your computer already. 
+        /*
+            ➜  weather_app node -v
+                v6.11.3
+                ➜  weather_app git:(master) npm -v
+                5.3.0
+                ➜  weather_app git:(master) git --version
+                git version 2.13.0
+                ➜  weather_app git:(master)
+        */
+
+3.Prepare the app
+    clone the git repo
+    /*
+        weather_app git:(master) git clone {put in your clone of the repo}
+        Cloning into 'node-js-getting-started'...
+        remote: Counting objects: 508, done.
+        remote: Total 508 (delta 0), reused 0 (delta 0), pack-reused 508
+        Receiving objects: 100% (508/508), 234.68 KiB | 0 bytes/s, done.
+        Resolving deltas: 100% (92/92), done.
+        ➜  weather_app git:(master) ✗
+        ➜  weather_app git:(master) ✗ cd node-js-getting-started
+        ➜  node-js-getting-started git:(master)
+    */
+
+4. Deploy the app   
+    Create an app on heroku, which is prepares Heroku to receive your source code
+    make sure your in the repo your deploying. 
+        /*
+            [node-js-getting-started git:(master) heroku create]
+            Creating app... done, ⬢ desolate-lake-53714
+            https://desolate-lake-53714.herokuapp.com/ | https://git.heroku.com/desolate-lake-53714.git
+            ➜  node-js-getting-started git:(master)
+        */
+    now deploy your code
+        /*
+            [node-js-getting-started git:(master) git push heroku master] 
+                you get a bunch of crazy shit after this.      
+        */
+
+   The app is now deployed: Ensure that at least one of the instances(copies) is 
+   runnings
+   /*
+    [$ heroku ps:scale web=1]
+        = Scaling dynos... done, now running web at 1:Free
+   */ 
+
+5. Now visit the site. 
+    [$ heroku open]
+     
+

@@ -1,0 +1,8 @@
+{
+    "name": "Weather Application Projecct",
+    "description": "Simple weather app",
+    "repository": "https://github.com/darknite23/weather_app.git",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+  }
+  

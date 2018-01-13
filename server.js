@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 //bp allows us to make use of the key-value pairs stored on the 
 //req-body object. 
 var request = require('request'); //used for making http request
+var heroku = "https://git.heroku.com/aqueous-reaches-57027.git";
 
 
 var app = express();// lets us use the express framework
@@ -20,12 +21,21 @@ app.use(bodyParser.urlencoded({extended: true})); //why do we use this????
 app.set("view engine", "ejs");
 
 
-/*
+
 app.get('/',function(req,res){//"/" root url home
     //res.send('Hi again Ralph'); //instead of text we want to respond to someone visiting our app with html. 
-    res.render('index'); //will render the html file index inside of the view folder. 
+    //res.render('index'); //will render the html file index inside of the view folder. 
+    res.render('index', {
+        weather: null, 
+        pic: null,
+        ejsConditions: null,
+        ejstemperature: null,
+        ejsWindSpeed: null,
+        ejsHumidity: null,
+        err: 'Error, please try again'
+    });
 });
-*/
+
 
 //what the big diffence between them: post and get???
 
