@@ -102,6 +102,6 @@ app.post('/',function(req,res){//with the bodyParser we can now use post request
   })
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log('Listen to port 3000..');
 })
